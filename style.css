@@ -120,12 +120,23 @@ ul {
 li {
     background-color: rgba(102, 126, 234, 0.1);
     margin: 5px 0;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, background-position 0.5s ease;
 }
 
 li:hover {
+    background-color: rgba(102, 126, 234, 0.3);
+    transform: translateX(10px);
+}
+
+/* Ocultar imagens dentro dos li inicialmente */
+li img {
+    display: none;
+}
+
+li:hover {
+    color: cornflowerblue;
     background-color: rgba(102, 126, 234, 0.3);
     transform: translateX(10px);
 }
